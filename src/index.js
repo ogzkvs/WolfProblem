@@ -20,12 +20,8 @@ const findMaxWolf = (wolfs) => {
   });
 
   maxNumberWolfs = groupWolfs.filter((item) => item.number === maxNumber);
-  console.log(maxNumberWolfs)
 
   let min = maxNumberWolfs[0].wolfID;
-
-  console.log("min", min)
-
   maxNumberWolfs.forEach((item) => {
     if (item.wolfID < min) {
       min = item.wolfID;
